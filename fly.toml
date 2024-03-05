@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for 86135-withered-river-4111-thrumming-field-4309-wispy-water-2439-hidden-breeze-1827 on 2024-03-05T15:25:50+08:00
+# fly.toml app configuration file generated for chatb on 2024-03-05T16:26:57+08:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = '86135-withered-river-4111-thrumming-field-4309-wispy-water-2439-hidden-breeze-1827'
+app = 'chatb'
 primary_region = 'hkg'
 
 [build]
@@ -12,13 +12,6 @@ primary_region = 'hkg'
 [env]
   PORT = '8080'
 
-[http_service]
-  internal_port = 8080
-  force_https = true
-  auto_stop_machines = true
-  auto_start_machines = true
-  min_machines_running = 0
-  processes = ['app']
 
 [[services]]
   protocol = 'tcp'
